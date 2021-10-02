@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		Bank bank = new Bank(10, 2000);
+		for (;;) {
+			System.out.println("Accounts:");
+			Account[] accounts = bank.getAllAccounts();
+			for (int i=0;i< accounts.length;i++) {
+				System.out.println("Account " + accounts[i].getId() + 
+						": $" + accounts[i].getBalance());
+			}
+			System.out.print("Enter source account: ");
+			int srcAccountId = in.nextInt();
+			Account srcAccount = bank.getAccountById(srcAccountId);
+			if (srcAccount == null) {
+				System.out.println("no such account id. Starting over");
+				continue;
+			}
+			System.out.print("Enter destination account: ");
+			int destAccountId = in.nextInt();
+			Account destAccount = bank.getAccountById(destAccountId);
+			if (destAccount == null) {
+				System.out.println("no such account id. Starting over");
+				continue;
+			}
+			System.out.print("Enter transfer amount: ");
+			double transferAmount = in.nextDouble();
+			boolean withdrawlResult = srcAccount.withdraw(transferAmount);
+			if (withdrawlResult) {
+				destAccount.deposit(transferAmount);
+			} else {
+				System.out.println("cannot withdraw more money than is in account");
+				continue;
+			}
+		}
+
+	}
+
+}
