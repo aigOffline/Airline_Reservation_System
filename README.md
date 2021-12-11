@@ -34,4 +34,5 @@ An airline must have a read-only GUI which displays all the reservations made by
 This GUI can be read only by an airline administrator, not by customers.
 
 If a flight is cancelled, the accounts of all customers with bookings on that flight must be updated to indicate their
+
 reservation was cancelled.
