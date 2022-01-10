@@ -33,10 +33,12 @@ An airline must have a read-only GUI which displays all the reservations made by
 
 This GUI can be read only by an airline administrator, not by customers.
 
+If a flight is cancelled, the accounts of all customers with bookings on that flight must be updated to indicate their
+
+reservation was cancelled.
+
 # Project 
 
 Project consist of multithreading is the ability of a program or an operating system process to manage its use by more than one user at a time 
 
-If a flight is cancelled, the accounts of all customers with bookings on that flight must be updated to indicate their
 
-reservation was cancelled.
