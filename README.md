@@ -1,5 +1,5 @@
 # Java
-Customer
+# Customer
 
 A customer can make reservations for flights.
 
@@ -15,7 +15,7 @@ A customer can pull up a read-only GUI to display all his/her reservations.
 
 A customer is not allowed to see data for other customers.
 
-Airline
+# Airline
 
 An airline must have a “web page” (= GUI) which displays all its flights and fares.
 
