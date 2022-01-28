@@ -41,4 +41,6 @@ reservation was cancelled.
 
 Project consist of multithreading is the ability of a program or an operating system process to manage its use by more than one user at a time 
 
+![image012](https://user-images.githubusercontent.com/87446059/151491109-004b3616-6531-4713-8783-e7fe78c7465d.jpeg)
+![image013](https://user-images.githubusercontent.com/87446059/151491114-9ec2b15c-fb7e-4bf3-a840-91846a3efa6d.jpeg)
 
